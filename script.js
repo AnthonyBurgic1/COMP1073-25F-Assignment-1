@@ -26,3 +26,8 @@ document.getElementById("verbBtn").addEventListener("click", function() {
   choices.verb = cycleChoice(verbs, choices.verb);
   this.textContent = choices.verb || verbs[0];
 });
+
+document.getElementById("adjectiveBtn").addEventListener("click", function() {
+  choices.adjective = cycleChoice(adjectives, choices.adjective);
+  this.textContent = choices.adjective || adjectives[0];
+});
