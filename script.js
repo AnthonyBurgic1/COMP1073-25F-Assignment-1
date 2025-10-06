@@ -41,3 +41,13 @@ document.getElementById("placeBtn").addEventListener("click", function() {
   choices.place = cycleChoice(places, choices.place);
   this.textContent = choices.place || places[0];
 });
+
+document.getElementById("makeStoryBtn").addEventListener("click", function() {
+  if (Object.values(choices).some(value => value === "")) {
+    document.getElementById("storyOutput").textContent =
+      "Please make a choice for each part before creating your story!";
+  } else {
+    const story = `${choices.subject} ${choices.verb} ${choices.adjective} ${choices.object} ${choices.place}.`;
+    document.getElementById("storyOutput").textContent = story;
+  }
+});
