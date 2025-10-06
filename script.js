@@ -1,3 +1,4 @@
+// Arrays for each of the story elements \\ 
 const subjects = ["The cat", "My teacher", "A robot", "An alien", "The pirate"];
 const verbs = ["found", "ate", "painted", "lost", "built"];
 const adjectives = ["a shiny", "a funny", "a gigantic", "a tiny", "a mysterious"];
