@@ -20,6 +20,7 @@ function cycleChoice(array, currentValue) {
     return array[(index + 1) % array.length];
 }
 
+// Add event listeners for each button \\
 document.getElementById("subjectBtn").addEventListener("click", function() {
   choices.subject = cycleChoice(subjects, choices.subject);
   this.textContent = choices.subject || subjects[0];
@@ -45,6 +46,7 @@ document.getElementById("placeBtn").addEventListener("click", function() {
   this.textContent = choices.place || places[0];
 });
 
+// Build and display the story \\ 
 document.getElementById("makeStoryBtn").addEventListener("click", function() {
   if (Object.values(choices).some(value => value === "")) {
     document.getElementById("storyOutput").textContent =
