@@ -31,3 +31,8 @@ document.getElementById("adjectiveBtn").addEventListener("click", function() {
   choices.adjective = cycleChoice(adjectives, choices.adjective);
   this.textContent = choices.adjective || adjectives[0];
 });
+
+document.getElementById("objectBtn").addEventListener("click", function() {
+  choices.object = cycleChoice(objects, choices.object);
+  this.textContent = choices.object || objects[0];
+});
