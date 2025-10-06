@@ -16,8 +16,9 @@ let choices = {
 
 // Functions to help cycle thorugh an array and help return it to the next element \\ 
 function cycleChoice(array, currentValue) {
-    let index =  array.indexOf(currentValue);
-    return array[(index + 1) % array.length];
+  let index = array.indexOf(currentValue);
+  if (index === -1) return array[0]; // start from first if not found
+  return array[(index + 1) % array.length];
 }
 
 // Add event listeners for each button \\
