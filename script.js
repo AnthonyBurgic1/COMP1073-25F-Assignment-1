@@ -5,6 +5,7 @@ const adjectives = ["a shiny", "a funny", "a gigantic", "a tiny", "a mysterious"
 const objects = ["apple", "spaceship", "castle", "book", "treasure"];
 const places = ["in the forest", "on the moon", "at school", "under the sea", "in Italy"];
 
+// Variables to store the selected choices \\ 
 let choices = {
     subject: "",
     verb: "",
@@ -13,6 +14,7 @@ let choices = {
     place: ""
 };  
 
+// Functions to help cycle thorugh an array and help return it to the next element \\ 
 function cycleChoice(array, currentValue) {
     let index =  array.indexOf(currentValue);
     return array[(index + 1) % array.length];
