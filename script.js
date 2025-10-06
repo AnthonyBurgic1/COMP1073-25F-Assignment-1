@@ -22,3 +22,7 @@ document.getElementById("subjectBtn").addEventListener("click", function() {
   this.textContent = choices.subject || subjects[0];
 });
 
+document.getElementById("verbBtn").addEventListener("click", function() {
+  choices.verb = cycleChoice(verbs, choices.verb);
+  this.textContent = choices.verb || verbs[0];
+});
