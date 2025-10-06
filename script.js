@@ -36,3 +36,8 @@ document.getElementById("objectBtn").addEventListener("click", function() {
   choices.object = cycleChoice(objects, choices.object);
   this.textContent = choices.object || objects[0];
 });
+
+document.getElementById("placeBtn").addEventListener("click", function() {
+  choices.place = cycleChoice(places, choices.place);
+  this.textContent = choices.place || places[0];
+});
