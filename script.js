@@ -5,9 +5,9 @@ const objects = ["apple", "spaceship", "castle", "book", "treasure"];
 const places = ["in the forest", "on the moon", "at school", "under the sea", "in Italy"];
 
 let choices = {
-subject: "",
-verb: "",
-adjective: "",
-object: "",
-place: ""
-}
+    subject: "",
+    verb: "",
+    adjective: "",
+    object: "",
+    place: ""
+};  
