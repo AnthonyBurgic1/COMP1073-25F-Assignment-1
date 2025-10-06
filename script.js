@@ -11,3 +11,14 @@ let choices = {
     object: "",
     place: ""
 };  
+
+function cycleChoice(array, currentValue) {
+    let index =  array.indexOf(currentValue);
+    return array[(index + 1) % array.length];
+}
+
+document.getElementById("subjectBtn").addEventListener("click", function() {
+  choices.subject = cycleChoice(subjects, choices.subject);
+  this.textContent = choices.subject || subjects[0];
+});
+
